@@ -18,7 +18,7 @@ namespace EffortTracker.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TimesheetReadDto>>> GetAll()
+        public async Task<ActionResult<IEnumerable<TimesheetReadDto>>> GetAll() 
         {
             return Ok(await _service.GetAllAsync());
         }
